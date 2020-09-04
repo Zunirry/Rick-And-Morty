@@ -19,15 +19,13 @@ function GetCharacter() {
     })
     
     const handleLoad = () => {
-         setNextPage({
-            nextPage: nextPage + 1
-        })
+         setNextPage(nextPage + 1)
     }
 
     useEffect(() => {
         
         function FetchData() {
-            fetch(`https://rickandmortyapi.com/api/character/?page=${nextPage.nextPage}`)
+            fetch(`https://rickandmortyapi.com/api/character/?page=${nextPage}`)
             .then(response => response.json())
             .then((list) => {
                 dispatch({
