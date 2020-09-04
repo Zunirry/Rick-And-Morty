@@ -1,0 +1,11 @@
+.card-bg{
+    background-color: #2b3743 !important;
+    color: #cdd0d3;
+    -webkit-box-shadow: 3px 4px 8px 0px rgba(0,0,0,0.51);
+    -moz-box-shadow: 3px 4px 8px 0px rgba(0,0,0,0.51);
+    box-shadow: 3px 4px 8px 0px rgba(0,0,0,0.51);
+}
+
+.card-bg:hover{
+    background-color: #3c4955 !important;
+}
