@@ -1,5 +1,4 @@
 export default function reducer(state, action) {
-    console.log(action)
     switch(action.type){
       case 'SET_PEOPLE_LIST':
         return {...state, peopleList: action.payload}
@@ -8,7 +7,6 @@ export default function reducer(state, action) {
        const search = state.peopleList.filter(people =>{
          return people.name.toLowerCase().includes(action.payload.toLowerCase())
         })
-        console.log(search)
         return {...state,  searchFilter: search}
 
       case 'FILTER_BY_SPECIE':
@@ -18,12 +16,8 @@ export default function reducer(state, action) {
         }
         const peopleFilterBySpecie = state.peopleList.filter(specie => specie.species === specieSelected)
         return { ...state, peopleFilterBySpecie, filterBySpecie: specieSelected}
-
-
-      case 'OPEN_MODAL':
-          return {...state}
-      case 'CLOSE_MODAL':
-        return {...state}
+      case 'ERROR':
+        return { ...state, error: action.payload };
       default:
         return state
     }

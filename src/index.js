@@ -14,8 +14,6 @@ const initialState = {
   peopleFilterBySpecie: [],
   characterFound: {},
   searchFilter: [],
-  visibility: false,
-  mediaId: null,
 }
 
 

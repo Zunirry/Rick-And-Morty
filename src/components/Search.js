@@ -16,6 +16,7 @@ export default function Search(props) {
     }
     return (
             <input
+                className="mb-2"
                 type="text"
                 placeholder="Search for a people"
                 name="search"

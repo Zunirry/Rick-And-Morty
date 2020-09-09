@@ -13,7 +13,16 @@
     -moz-box-shadow: 1px 4px 68px 48px rgba(0,0,0,0.95);
     box-shadow: 1px 4px 68px 48px rgba(0,0,0,0.95);
 }
-  
+
+.Modal-img{
+    text-align: center;
+    padding-right: 20px;
+}
+
+.Modal-text{
+    padding-left: 20px;
+}
+
 .Modal-close {
     width: 50px;
     height: 50px;
@@ -32,3 +41,78 @@
     font-weight: bold;
     font-size: 30px;
 }
+
+@media only screen and (min-width: 828px){
+    .Modal{
+        max-width: 500px;
+        top: 100px;
+        font-size: 14px;
+    }
+    
+    .Modal h2{
+        font-size: 28px;
+    }
+    .Modal img{
+
+        min-width: 550;
+    }
+}
+
+@media only screen and (min-width: 575px){
+    
+    .Modal{
+        top: 60px;
+        max-width: 400px;
+        font-size: 14px;
+    }
+    
+    .Modal h2{
+        font-size: 28px;
+    }
+    .Modal img{
+        min-width: 350px;
+    }
+}
+
+@media only screen and (min-width: 401px){
+    .Modal{
+        top: 60px;
+         max-width: 350px;
+         font-size: 14px;
+    }
+                                
+    .Modal h2{
+        font-size: 28px;
+    }
+ 
+    .Modal img{
+        min-width: 230px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .Modal{
+        max-width: 310px;
+        top: 50px;
+        font-size: 16px;
+    }
+
+    .Modal h2{
+        font-size: 34px;
+    }
+
+    .Modal img {
+        max-width: 260px;        
+    }
+
+    .Modal-close{
+        top: -20px;
+        right: -25px;
+        width: 50px;
+        height: 50px;
+    }
+    .Modal-close:after {
+        font-size: 25px;
+    }
+}
+
